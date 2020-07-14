@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section>
+        <div class="toggle-btn">
+            <i class="fas fa-adjust"></i>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="content-image">
+                    <img src="maxresdefault.jpg" alt="">
+                </div>
+                <div class="content-text">
+                    <h1 class="title">The strength within</h1>
+                    <h2 class="subtitle">Unlease your inner beast</h2>
+                    <p class="paragraph">
+                        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+                    </p>
+                    <p class="paragraph">
+                        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+                    </p>
+                    <a href="" class="cta">Learn More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        let body = document.body;
+        let toggleBtn = document.querySelector('.toggle-btn');
+        let currentTheme = localStorage.getItem('currentTheme');
+
+        toggleBtn.addEventListener('click', function() {
+            body.classList.toggle('dark-theme');
+             })
+
+    </script>
+</body>
+</html>
